@@ -38,14 +38,19 @@ export function Form() {
         autoClose: 2000,
         theme: 'colored',
       });
-    } else if (contacts.find(contact => contact.phone === number)) {
+    } else if (contacts.find(contact => contact.number === number)) {
       return toast.warning(`${number} is already in contacts`, {
         autoClose: 2000,
         theme: 'colored',
       });
     } else {
       dispatch(
-        addContact({ id: nanoid(), name, phone: number, createdAt: Date.now() })
+        addContact({
+          id: nanoid(),
+          name,
+          number: number,
+          createdAt: Date.now(),
+        })
       );
       toast.success(`${name} has been added`, {
         autoClose: 2000,

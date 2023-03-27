@@ -29,13 +29,14 @@
   padding: 8px 20px;
   border-radius: 5px;
   border-color: grey;
-  background-color: mediumturquoise;
+  background-color: #008080;
+  color: white;
   cursor: pointer;
 }
 
 .contactBtn:hover,
 .contactBtn:focus {
   background-color: transparent;
-  color: #37b182;
-  border: 2px solid #37b182;
+  color: #008080;
+  border: 2px solid #008080;
 }

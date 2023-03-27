@@ -1,7 +1,11 @@
+import phone from 'images/phone.jpg';
+import css from '../pages/Home.module.css';
+
 export default function Home() {
   return (
-    <div>
-      <h1>Phonebook welcome page</h1>
+    <div className={css.container}>
+      <h1 className={css.title}>Join PhoneBook today</h1>
+      <img src={phone} className={css.img} />
     </div>
   );
 }

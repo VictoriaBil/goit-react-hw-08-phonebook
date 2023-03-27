@@ -45,7 +45,7 @@ export function App() {
             <PrivateRoute redirectTo="/login" component={<Contacts />} />
           }
         />
-        {/* <Route path="*" element="Not found" /> */}
+        <Route path="*" element="Page not found" />
       </Route>
     </Routes>
   );

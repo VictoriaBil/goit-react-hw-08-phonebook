@@ -29,11 +29,11 @@ export function ContactList() {
       {contacts.length > 0 && !isLoading && !error && (
         <>
           <ul className={css.list}>
-            {filteredContacts().map(({ name, phone, id }) => {
+            {filteredContacts().map(({ name, number, id }) => {
               return (
                 <li className={css.contact} key={id}>
                   <p className={css.name}>{name}</p> :
-                  <p className={css.phone}>{phone}</p>
+                  <p className={css.phone}>{number}</p>
                   <button
                     className={css.contactBtn}
                     type="button"
