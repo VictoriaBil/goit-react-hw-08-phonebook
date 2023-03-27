@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className={css.container}>
       <h1 className={css.title}>Join PhoneBook today</h1>
-      <img src={phone} className={css.img} />
+      <img src={phone} alt="phone" className={css.img} />
     </div>
   );
 }
